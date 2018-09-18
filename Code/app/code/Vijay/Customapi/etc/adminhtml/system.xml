@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author VIJAYAKUMAR S
+ * @copyright Copyright (c) 2018
+ * @package Vijay_Customapi
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="vijaystore" translate="label" sortOrder="180">
+            <label>Vijay</label>
+        </tab>
+        <section id="apitask_tab" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Custom API Task</label>
+            <tab>vijaystore</tab>
+            <resource>Vijay_Customapi::customapi_configuration</resource>
+            <group id="apitask_setting" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Custom API Task Setting</label>
+                <field id="api_user_id" translate="label comment" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>User Id</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

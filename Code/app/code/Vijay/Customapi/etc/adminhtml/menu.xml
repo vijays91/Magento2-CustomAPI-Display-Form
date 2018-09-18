@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author VIJAYAKUMAR S
+ * @copyright Copyright (c) 2018
+ * @package Vijay_Customapi
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Vijay_Customapi::customapi" title="Custom API" module="Vijay_Customapi" sortOrder="10" resource="Vijay_Customapi::customapi"/>
+        <add id="Vijay_Customapi::custom_api" title="Custom API" module="Vijay_Customapi" sortOrder="20" parent="Vijay_Customapi::customapi" action="customapi/index/index"  resource="Vijay_Customapi::custom_api" />
+    </menu>
+</config>
